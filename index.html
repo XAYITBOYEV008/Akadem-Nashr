@@ -11,17 +11,17 @@
 
 <body>
   <!-- Saytning shapkasi -->
-  <header class="site-header ">
-    <div class="header container">
+  <header class="site-header">
+    <div class="header-container container">
       <a href="index.html" class="site-logo">
         <img src="./img/logo.png" alt="Akadem Nashr" width="230" height="60">
       </a>
       <nav class="site-header-nav">
         <ul class="list-none site-header-list">
           <li class="sitenav-list-item"><a class="sitenav-link active" href="index.html">Bosh sahifa</a></li>
-          <li class="sitenav-list-item"><a class="sitenav-link" href="#">Kitoblar</a></li>
-          <li class="sitenav-list-item"><a class="sitenav-link" href="#">Aksiyalar</a></li>
-          <li class="sitenav-list-item"><a class="sitenav-link" href="#">Kontaktlar</a></li>
+          <li class="sitenav-list-item"><a class="sitenav-link" href="#books">Kitoblar</a></li>
+          <li class="sitenav-list-item"><a class="sitenav-link" href="#aksiyaku">Aksiyalar</a></li>
+          <li class="sitenav-list-item"><a class="sitenav-link" href="#kontaktlarku">Kontaktlar</a></li>
         </ul>
         <a href="#" class="main-link">Ro’yxatdan o’tish</a>
       </nav>
@@ -31,7 +31,7 @@
   <!-- Saytning asosiy qismi -->
   <main>
     <!-- Hero Section -->
-    <section class="hero-section  ">
+    <section class="hero-section" id="aksiyaku">
       <div class="hero-container container">
         <div class="hero-content">
           <hr class="orange-line hero-line">
@@ -42,16 +42,12 @@
             video darslar yozilgan bo‘lib, ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.</p>
           <a href="#" class="main-link">Buyurtma berish</a>
         </div>
-        <div>
-          <img src="./img/python-book.jpg" alt="Kitob" width="510" height="510"webkit-box-shadow: 20px 25px 5px -1px rgba(0,0,0,0.75);
-          moz-box-shadow: 20px 25px 5px -1px rgba(0,0,0,0.75);
-          box-shadow: 20px 25px 5px -1px rgba(0,0,0,0.75);>
-        </div>
+        <img class="hero-img" src="./img/python-book.jpg" alt="Kitob" width="510" height="510">
       </div>
     </section>
 
     <!-- Features section -->
-    <section class="feature-section ">
+    <section class="feature-section" id="books">
       <div class="container">
         <hr class="orange-line feature-line">
         <h2 class="feature-title">Nega aynan <br>Akademnashr?</h2>
@@ -80,7 +76,7 @@
     </section>
 
     <!-- Sale Section -->
-    <section class="sale ">
+    <section class="sale">
       <div class="sale-container container">
         <div class="sale-content">
           <h2 class="sale-title">Bolalar kitoblari uchun ajoyib aksiya!</h2>
@@ -94,15 +90,14 @@
           </div>
           <a href="#" class="main-link">Buyurtma berish</a>
         </div>
-        <div>
-          <img src="./img/sale-img.jpg" alt="Kitob">
-        </div>
+        <img class="sale-img" src="./img/sale-img.jpg" alt="Kitob" width="440"
+        height="440">
       </div>
     </section>
   </main>
 
   <!-- Saytni podvali -->
-  <footer class="site-footer ">
+  <footer class="site-footer" id="kontaktlarku">
     <div class="container">
       <div class="footer-top">
         <a href="index.html" class="site-logo">
@@ -129,7 +124,7 @@
           <li><a class="footer-link" href="#">Yangiliklar</a></li>
           <li><a class="footer-link" href="#">Kontaktlar</a></li>
         </ul>
-        <ul class="list-none  footer-bottom-list">
+        <ul class="list-none footer-bottom-list">
           <li><a class="footer-link" href="#">Ilmiy nashrlar</a></li>
           <li><a class="footer-link" href="#">Ilmiy-ommabop nashrlar</a></li>
           <li><a class="footer-link" href="#">Ma’rifiy nashrlar</a></li>
